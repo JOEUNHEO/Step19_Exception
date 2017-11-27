@@ -9,12 +9,12 @@ public class MainClass02 {
 		
 		try {
 			System.out.println("젯수 입력(정수):");
-			int num1 = scan.nextInt();
+			int num1 = scan.nextInt();//InputMismatchException 발생
 			System.out.println("피젯수 입력(정수):");
 			int num2 = scan.nextInt();
 		
 			//num2 를 num1 으로 나눈 몫
-			int mog = num2 / num1;
+			int mog = num2 / num1; //ArithmeticException 발생
 			//num2 를 num1 으로 나눈 나머지
 			int na = num2 % num1;
 			
